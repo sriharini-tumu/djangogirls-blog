@@ -1,0 +1,29 @@
+{%load staticfiles%}
+<html>
+
+<head>
+<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet"	type="text/css">
+<link	rel="stylesheet"	href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link	rel="stylesheet"	href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel ="stylesheet" href="{% static 'css/blog.css' %}">
+<title>Django girls blog</title>
+</head>
+<h1><a href=""> Django girls blog<a></h1>
+
+
+<body>
+{% for post in posts%}
+<p> Published on: {{ post.published_date }}</p>
+<div><h2><a href = "" >{{ post.title }}<h2></div>
+<div><h3><a href = "" >{{ post.text }}<h3></div>
+{% endfor%}
+<div>
+
+
+
+
+
+
+
+
+</html>
